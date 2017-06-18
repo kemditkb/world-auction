@@ -1,4 +1,4 @@
-<<template lang="pug">
+<template lang="pug">
 .login-box
   .login-logo
     router-link(to='/')
@@ -26,7 +26,7 @@
           button.btn.btn-primary.btn-block.btn-flat(type='submit') 登入
 </template>
 
-<<script>
+<script>
 export default {
   data: function () {
     return {
@@ -39,6 +39,7 @@ export default {
   },
   methods: {
     login: function () {
+      this.$router.push('/dashboard')
     }
   }
 }

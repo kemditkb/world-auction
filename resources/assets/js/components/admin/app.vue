@@ -1,14 +1,10 @@
 <template lang="pug">
-  .wrapper.login-page
-    login
+.wrapper
+  router-view
 </template>
 
 <script>
-import login from './login'
-
 export default {
-  components: {
-    login
-  }
+
 }
 </script>
