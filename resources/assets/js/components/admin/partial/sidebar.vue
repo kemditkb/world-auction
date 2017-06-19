@@ -2,9 +2,9 @@
 aside.main-sidebar
   section.sidebar
     ul.sidebar-menu
-      li.header MAIN NAVIGATION
+      li.header
       li
-        router-link(to='/dashboard')
+        router-link(to='/')
           i.fa.fa-dashboard
           span Dashboard
       li

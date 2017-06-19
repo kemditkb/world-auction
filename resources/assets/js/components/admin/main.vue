@@ -2,6 +2,7 @@
   div
     app-header
     app-sidebar
+    router-view
 </template>
 
 <script>

@@ -1,5 +1,6 @@
 
 require('./bootstrap');
+require('admin-lte');
 
 import Vue from 'vue'
 

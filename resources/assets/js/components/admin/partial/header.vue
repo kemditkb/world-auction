@@ -1,6 +1,6 @@
 <template lang="pug">
 header.main-header
-  router-link.logo(to='/dashboard')
+  router-link.logo(to='/')
     span.logo-mini
       b 天下
     span.logo-lg
@@ -13,17 +13,16 @@ header.main-header
       span.icon-bar
     .navbar-custom-menu
       ul.nav.navbar-nav
-        li.dropdown.user.user-menu
-          a.dropdown-toggle(href='#', data-toggle='dropdown')
-            span.hidden-xs 管理者
-          ul.dropdown-menu
-            li.user-footer
-              .pull-right
-                a.btn.btn-default.btn-flat(@click.prevent='logout') 登出
+        li
+          a(href="#", @click.prevent='logout') 登出
 </template>
 
 <script>
 export default {
-  
+  methods: {
+    logout: function () {
+      this.$router.push('/login')
+    }
+  }
 }
 </script>

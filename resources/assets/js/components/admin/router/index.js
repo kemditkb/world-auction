@@ -3,7 +3,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import login from '../login'
-import dashboard from '../dashboard'
+import main from '../main'
+import index from '../dashboard/index'
 
 Vue.use(VueRouter)
 
@@ -18,12 +19,22 @@ const router = new VueRouter({
       }
     },
     {
-      path: '/dashboard',
-      component: dashboard,
+      path: '/',
+      component: main,
       beforeEnter: (to, from, next) => {
         document.body.className = 'skin-blue sidebar-mini'
         next()
-      }
+      },
+      children: [
+        {
+          path: '/dashboard',
+          component: index
+        },
+        {
+          path: '',
+          redirect: '/dashboard'
+        }
+      ]
     },
     {
       path: '*',
