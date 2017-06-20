@@ -21,7 +21,7 @@ const router = new VueRouter({
       }
     },
     {
-      path: '/',
+      path: '/admin',
       component: main,
       beforeEnter: (to, from, next) => {
         document.body.className = 'skin-blue sidebar-mini'
