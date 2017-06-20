@@ -2,48 +2,26 @@
 aside.main-sidebar
   section.sidebar
     ul.sidebar-menu
-      li.header
+      li.header 選單
       li
         router-link(to='/')
           i.fa.fa-dashboard
-          span Dashboard
-      li
-        router-link(to='/widgets')
-          i.fa.fa-th
-          span Widgets
-          span.pull-right-container
-            small.label.pull-right.bg-green Hot
+          span 控制面板
       li.treeview
         a(href='#')
           i.fa.fa-laptop
-          span UI Elements
+          span 系統管理
           span.pull-right-container
             i.fa.fa-angle-left.pull-right
         ul.treeview-menu
           li
-            router-link(to='/UI/general')
+            router-link(to='/category')
               i.fa.fa-circle-o
-              |  General
+              |  商品類別
           li
-            router-link(to='/UI/icons')
+            router-link(to='/product')
               i.fa.fa-circle-o
-              |  Icons
-          li
-            router-link(to='/UI/buttons')
-              i.fa.fa-circle-o
-              |  Buttons
-          li
-            router-link(to='/UI/sliders')
-              i.fa.fa-circle-o
-              |  Sliders
-          li
-            router-link(to='/UI/timeline')
-              i.fa.fa-circle-o
-              |  Timeline
-          li
-            router-link(to='/UI/modals')
-              i.fa.fa-circle-o
-              |  Modals 
+              |  商品管理
 </template>
 
 <script>

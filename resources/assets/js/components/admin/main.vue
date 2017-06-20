@@ -1,8 +1,10 @@
 <template lang="pug">
-  div
+  .wrapper
     app-header
     app-sidebar
-    router-view
+    .content-wrapper
+      .content
+        router-view
 </template>
 
 <script>

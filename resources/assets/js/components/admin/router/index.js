@@ -4,7 +4,9 @@ import VueRouter from 'vue-router'
 
 import login from '../login'
 import main from '../main'
-import index from '../dashboard/index'
+import dashboard from '../dashboard/index'
+import category from '../category/index'
+import product from '../product/index'
 
 Vue.use(VueRouter)
 
@@ -28,7 +30,15 @@ const router = new VueRouter({
       children: [
         {
           path: '/dashboard',
-          component: index
+          component: dashboard
+        },
+        {
+          path: '/category',
+          component: category
+        },
+        {
+          path: '/product',
+          component: product
         },
         {
           path: '',
