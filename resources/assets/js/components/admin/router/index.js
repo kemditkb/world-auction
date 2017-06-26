@@ -7,6 +7,7 @@ import main from '../main'
 import dashboard from '../dashboard/index'
 import category from '../category/index'
 import product from '../product/index'
+import productCreate from '../product/create'
 
 Vue.use(VueRouter)
 
@@ -39,6 +40,10 @@ const router = new VueRouter({
         {
           path: '/product',
           component: product
+        },
+        {
+          path: '/product_create',
+          component: productCreate
         },
         {
           path: '',

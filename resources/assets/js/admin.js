@@ -1,6 +1,7 @@
 
 require('./bootstrap');
 require('admin-lte');
+require('bootstrap-datepicker')
 
 import Vue from 'vue'
 

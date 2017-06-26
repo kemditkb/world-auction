@@ -3,7 +3,7 @@
     .col-xs-12
         .box
           .box-header
-            .btn.btn-success.btn-md
+            router-link.btn.btn-success.btn-md(:to="{path: '/product_create'}")
               i.fa.fa-plus-circle 新增商品
           .box-body.table-responsive.no-padding
               table.table.table-striped.table-hover
